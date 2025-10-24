@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Agua para Zinacantepec: Captación y Conservación</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo-link"> 
+        <div class="logo">
+            💧Agua Zina
+        </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="https://wa.link/7kjhmi" class="btn-cta">Contacto</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        
+        <section class="hero" id="hero-slider">
+            <div class="hero-content">
+                <h1>Agua para Zinacantepec: Captación Sostenible</h1>
+                <p>El poder del agua de lluvia en tus manos.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fa-solid fa-cloud-rain" data-tooltip="Precipitación"></i>
+                        <h2>900 mm/Año</h2>
+                        <p>Lluvia aprovechable.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-person-shelter" data-tooltip="Consumo"></i>
+                        <h2>120 L/Día</h2>
+                        <p>Consumo promedio.</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-hand-holding-water" data-tooltip="Ahorro"></i>
+                        <h2>70% Ahorro</h2>
+                        <p>Cobertura familiar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="problema container text-center" id="problema">
+            <h2>La Crisis del Agua en Zinacantepec</h2>
+            <p class="subtitle">Escasez por distribución e infraestructura deficiente.</p>
+            <div class="problem-details" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <p><strong>Cortes y Fugas:</strong> Las redes de distribución de agua potable han rebasado su vida útil, provocando grandes fugas y baja presión constante en colonias clave. La captación pluvial reduce la dependencia municipal.</p>
+                <p><strong>Crisis de Infraestructura:</strong> La falta de mantenimiento y problemas financieros obligan a reducir el servicio. Implementar sistemas de captación es la solución más rápida y sostenible para la autonomía de los hogares.</p>
+                <div class="text-center" style="margin-top: 2rem;">
+                <button class="btn-cta"><a href="proyectos.html" class="link-info">Ver Proyectos <i class="fa-solid fa-chart-simple"></i></a></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="ciclo-urbano bg-light" id="ciclo">
+            <div class="container text-center">
+                <h2>El Ciclo Urbano del Agua</h2>
+                <p class="subtitle">Entiende por qué la captación es esencial para un ciclo local más sostenible.</p>
+                
+                <div class="ciclo-content-grid">
+                    <div class="ciclo-card">
+                        <i class="fa-solid fa-cloud-showers-heavy"></i>
+                        <h3>El Problema Actual</h3>
+                        <p>En Zinacantepec, la mayoría de la lluvia va directamente al drenaje pluvial, sobrecargando los sistemas y desperdiciando agua potable para usos no potables (limpieza, sanitarios).</p>
+                    </div>
+                    <div class="ciclo-card">
+                        <i class="fa-solid fa-house-chimney-water"></i>
+                        <h3>La Solución Doméstica</h3>
+                        <p>Al captar en casa, se reduce la presión sobre el drenaje y la demanda de agua extraída del subsuelo o de pozos lejanos, logrando un ciclo hídrico más local y sostenible.</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="documentos/guia-ciclo.pdf" target="_blank" class="btn-cta btn-small">Descargar Diagrama Detallado</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="educacion container" id="educacion">
+            <div class="text-center">
+                <h2>Aprende a Captar: Fundamentos Esenciales</h2>
+                <p class="subtitle">La información clave para entender y participar en la cosecha de agua de lluvia.</p>
+                <div class="educacion-grid" style="grid-template-columns: 1fr;">
+                    <div class="educacion-card">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <h3>Impacto Local y Beneficios</h3>
+                        <p>Conoce los beneficios económicos, ambientales y sociales directos de la captación en tu colonia y en el municipio.</p>
+                    </div>
+                </div>
+                
+                <div class="equivalencias-card">
+                    <h3>💧 ¿Cuánta agua captas realmente?</h3>
+                    <p>En promedio, <strong>1 minuto de lluvia</strong> en un techo de 100m² equivale a:</p>
+                    <div class="equivalencias-valor" id="equivalencias-output">
+                        50 garrafones
+                    </div>
+                    <button id="siguiente-equivalencia" class="btn-cta btn-small">Ver otra Equivalencia <i class="fa-solid fa-arrows-rotate"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="soluciones bg-light" id="soluciones">
+            <div class="container text-center">
+                <h2>Soluciones de Captación Inteligente</h2>
+                <p class="subtitle">Sistemas prácticos y económicos diseñados para tu hogar.</p>
+                <div class="solutions-grid">
+                    <a href="documentos/guia-instalacion.pdf" target="_blank" class="link-info">
+                       <div class="solution-card">
+                        <i class="fa-solid fa-house-water"></i>
+                        <h3>Sistema Básico Modular</h3>
+                        <p>Diseñado para techos de hasta 100m². Incluye separador de primeras lluvias, cisterna de 2,500L y filtro básico.</p>
+                        <br>
+                        <p class="link-label">Descargar Guía de Instalación Rápida</p>
+                       </div>
+                    </a>
+                    <a href="calculadora.html" class="link-info"> 
+                       <div class="solution-card">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h3>Sistema Filtrado Avanzado</h3>
+                        <p>Incluye filtración de carbón activado, almacenamiento optimizado y bomba de presión para distribución interna.</p>
+                        <br>
+                        <p class="link-label">Calcula tu Ahorro Potencial</p>
+                       </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="filtrado container text-center" id="filtrado">
+            <h2>Filtros y Calidad del Agua</h2>
+            <p class="subtitle">Asegura que el agua de lluvia sea apta para el uso que le darás.</p>
+            <div class="detail-card" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <p><strong>Filtrado Básico:</strong> Se eliminan hojas, ramas y sedimentos gruesos, generalmente utilizando el separador de primeras lluvias y una malla fina. Esto es esencial para usos sanitarios, limpieza y riego.</p>
+                <p><strong>Potabilización:</strong> Para beber o cocinar, se requiere un paso adicional de purificación. Esto incluye típicamente un filtro de <strong>carbón activado</strong> (para eliminar olores y colores) y un método de <strong>desinfección</strong> (como la cloración o un sistema de luz UV) para garantizar la salubridad.</p>
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="documentos/guia-filtros.pdf" target="_blank" class="btn-cta">Guía Detallada de Filtros <i class="fa-solid fa-file-pdf"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculo bg-light text-center" id="calculo">
+            <div class="container">
+                <h2>Cálculo Básico de Almacenamiento</h2>
+                <p class="subtitle">Determina la capacidad de cisterna que necesitas para asegurar tu autonomía hídrica.</p>
+                
+                <div class="calculo-formula" style="max-width: 700px; margin: 0 auto; padding: 25px; border-radius: 10px; background-color: white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                    <h3>Fórmula Simple de Cosecha Anual</h3>
+                    <p>Para estimar cuánto puedes captar a lo largo de un año, usa esta fórmula:</p>
+                    
+                    <div style="font-size: 1.5rem; font-weight: bold; color: var(--color-principal); margin: 20px 0;">
+                        Capacidad (Litros) = Área del Techo (m<sup>2</sup>) &times; Precipitación Anual (m) &times; 0.8 (Factor de Eficiencia)
+                    </div>
+                    
+                    <p>Ejemplo práctico para Zinacantepec (900 mm/año):</p>
+                    <p>Un techo de 100 m<sup>2</sup> con 0.9 m de lluvia anual = 100 &times; 0.9 &times; 0.8 = 72 m³ (72,000 Litros) al año.</p>
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <a href="calculadora.html" class="btn-cta">Ir a la Calculadora Avanzada <i class="fa-solid fa-calculator"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mantenimiento container" id="mantenimiento">
+            <h2>Mantenimiento Sostenible</h2>
+            <p class="subtitle text-center">Consejos clave para garantizar la eficiencia de tu sistema a largo plazo.</p>
+            <div class="mantenimiento-grid">
+                <div class="mantenimiento-tip">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h4>1. Limpieza de Canales</h4>
+                    <p>Revisa y despeja canalones y bajadas de hojas y residuos al menos cada tres meses.</p>
+                </div>
+                <div class="mantenimiento-tip">
+                    <i class="fa-solid fa-broom"></i>
+                    <h4>2. Separador de Primeras Lluvias</h4>
+                    <p>Vacía el dispositivo de descarte de las "primeras lluvias" inmediatamente después de cada evento de precipitación.</p>
+                </div>
+                <div class="mantenimiento-tip">
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <h4>3. Revisión de Filtros</h4>
+                    <p>Lava o reemplaza los pre-filtros y cartuchos (carbón activado) según las indicaciones del fabricante (generalmente cada 6 meses).</p>
+                </div>
+                <div class="mantenimiento-tip">
+                    <i class="fa-solid fa-pump-soap"></i>
+                    <h4>4. Limpieza de Cisterna</h4>
+                    <p>Vacía y lava la cisterna de almacenamiento anualmente para eliminar lodos sedimentados.</p>
+                </div>
+                <div class="mantenimiento-tip">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4>5. Chequeo de Fugas</h4>
+                    <p>Inspecciona las uniones y tuberías después de lluvias fuertes para detectar y corregir cualquier fuga.</p>
+                </div>
+            </div>
+            
+            <div class="proveedores-info text-center" style="margin-top: 4rem;">
+                <h3>Lista de Proveedores Locales Recomendados</h3>
+                <ul id="proveedores-lista">
+                    <li><i class="fa-solid fa-truck"></i> Tlapalería "El Aljibe" (Materiales de Tubería y PVC)</li>
+                    <li><i class="fa-solid fa-trowel-bricks"></i> Ferretería Central de Zinacantepec (Cisternas y Depósitos)</li>
+                    <li><i class="fa-solid fa-wrench"></i> Plomero Arturo (Instalación y Mantenimiento)</li>
+                    <li><i class="fa-solid fa-droplet-slash"></i> Tienda de Filtros del Centro (Filtros de Carbón y Sedimentos)</li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="mapa-interactivo text-center" id="mapa-interactivo-custom">
+             </section>
+        
+        <section class="mapa-google-embed text-center" id="mapa-google">
+             </section>
+
+        <section class="faq bg-light" id="faq">
+            <div class="container" style="max-width: 800px; margin: auto;">
+                <h2 class="text-center">Preguntas Frecuentes (FAQ)</h2>
+                <p class="subtitle text-center">Resolvemos tus dudas más comunes sobre la captación pluvial.</p>
+
+                <div class="faq-acordeon">
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Es segura el agua de lluvia para el consumo humano?</summary>
+                        <div class="faq-respuesta"><p>El agua requiere ser tratada para eliminar partículas. Nuestros sistemas básicos son aptos para limpieza y riego; para consumo, recomendamos filtración avanzada y cloración.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Cuánto cuesta instalar un sistema básico de captación?</summary>
+                        <div class="faq-respuesta"><p>El costo varía según techo y cisterna (2,500L a 10,000L). Puedes revisar nuestro <a href="documentos/presupuestos.pdf" target="_blank">documento de presupuestos</a> para rangos de precio específicos de Zinacantepec.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Qué mantenimiento requiere el sistema de captación?</summary>
+                        <div class="faq-respuesta"><p>Mantenimiento trimestral: limpiar canalones y vaciar el separador de primeras lluvias. Mantenimiento anual: limpiar la cisterna a fondo.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Qué pasa si mi techo no es plano o tiene tejas?</summary>
+                        <div class="faq-respuesta"><p>Todos los techos (inclinados, planos, tejas) pueden captar agua. La clave es instalar canalones adecuados y asegurar que el área de recolección esté limpia para minimizar la contaminación.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Necesito permiso del municipio para instalarlo?</summary>
+                        <div class="faq-respuesta"><p>Generalmente, la captación de agua pluvial doméstica no requiere permisos especiales en la mayoría de las localidades del Estado de México, ya que promueve la autosuficiencia hídrica. Es recomendable verificar con el OPDMAS local.</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿El sistema funciona durante la época de sequía?</summary>
+                        <div class="faq-respuesta"><p>Durante la sequía, el sistema utiliza el agua previamente almacenada en la cisterna. La meta es almacenar suficiente agua durante la temporada de lluvias (mayo-octubre) para cubrir la demanda en la época seca (noviembre-abril).</p></div>
+                    </details>
+                    <details class="faq-item">
+                        <summary class="faq-pregunta">¿Qué tan grande debe ser mi cisterna?</summary>
+                        <div class="faq-respuesta"><p>Depende de cuántos litros consuma tu familia y cuántos días quieras tener autonomía. La Calculadora en nuestra página te ayuda a determinar el tamaño óptimo.</p></div>
+                    </details>
+                    <details class="faq-item>">
+                        <summary class="faq-pregunta">¿Puedo usar mi tinaco existente como almacenamiento?</summary>
+                        <div class="faq-respuesta"><p>Sí, pero se recomienda usar un depósito separado para el agua de lluvia para evitar mezclarla con la red municipal. El tinaco municipal puede usarse para la distribución final del agua pluvial ya filtrada.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section class="contacto container text-center" id="contacto">
+            <h2>Asesoría Gratuita</h2>
+            <p class="subtitle">Planifica tu sistema de captación con un especialista.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje / Pregunta</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn-cta" id="submit-button">
+                    Enviar Solicitud <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <div class="estado-formulario" id="form-message"></div>
+                </form>
+        </section>
+        
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>💧AguaZina</h3>
+                <p>Un proyecto para empoderar a la comunidad de Zinacantepec con soluciones hídricas sostenibles.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Recursos Rápidos</h3>
+                <ul>
+                    <li><a href="documentos/guia-instalacion.pdf" target="_blank">Guía de Instalación</a></li>
+                    <li><a href="documentos/presupuestos.pdf" target="_blank">Presupuestos</a></li>
+                    <li><a href="#contacto">Asesoría Gratuita</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siguenos en Redes</h3>
+                <a href="https://www.facebook.com/ayde.sabino" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/joul_diz?utm_source=ig_web_button_share_sheet&igsh=MXhnYTJmM3JuZGtmaw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.link/7kjhmi" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Proyecto Captación Agua Zinacantepec. Desarrollado por Laura Josefa Chigora Diaz, Ana Laura Sabino Tellez, Colaboradora Maritza Hernandez.</p>
+        </div>
+    </footer>
+
+
+    <script src="js/formulario.js"></script>
+    <script src="js/mapa.js"></script> 
+    <script src="js/funcionalidad.js"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>

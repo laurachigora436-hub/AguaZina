@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora | Agua para Zinacantepec: Captación y Conservación</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+</head>
+<body>
+
+        <header class="main-header">
+        <a href="index.html" class="logo-link"> 
+        <div class="logo">
+            💧Agua Zina
+        </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="https://wa.link/7kjhmi" class="btn-cta">Contacto</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <main class="container">
+        
+        <section class="calculadora-section text-center">
+            <h1>Calculadora de Potencial Pluvial</h1>
+            <p class="subtitle">Usa datos reales de Zinacantepec (900 mm/año) para estimar tu potencial de captación y ahorro.</p>
+            
+            <div class="calculadora-grid">
+                <form id="calc-form" class="calc-form-container">
+                    <h2>Datos de tu Techo</h2>
+                    <p style="margin-bottom: 1.5rem; color: #4A5568;">Ingresa el área total de tu techo para calcular la cosecha anual de agua.</p>
+                    
+                    <div class="form-group">
+                        <label for="area-techo"><i class="fa-solid fa-ruler-combined"></i> Área de Techo (m²)</label>
+                        <input type="number" id="area-techo" name="area-techo" placeholder="Ej: 80" min="1" required>
+                        <small class="help-text">Área horizontal, no inclinada, que capta la lluvia.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="material-techo"><i class="fa-solid fa-house-chimney"></i> Material del Techo</label>
+                        <select id="material-techo" name="material-techo" required>
+                            <option value="teja">Teja (Coef. 0.8) - Cerámica</option>
+                            <option value="metal">Lámina / Metal (Coef. 0.9) - Máxima eficiencia</option>
+                            <option value="concreto">Losa de Concreto (Coef. 0.75) - Superficie rugosa</option>
+                            <option value="otro">Otro (Coef. 0.7)</option>
+                        </select>
+                        <small class="help-text">El material afecta la eficiencia de captación.</small>
+                    </div>
+
+                    <button type="submit" class="btn-cta">Calcular Potencial <i class="fa-solid fa-calculator"></i></button>
+                </form>
+
+                <div class="resultados-container">
+                    <h2>Resultados de Captación</h2>
+                    <div id="resultado-agua" class="result-box">
+                        <p class="initial-message">Ingresa los datos de tu techo y haz clic en "Calcular Potencial" para ver tus resultados.</p>
+                    </div>
+                    <div style="margin-top: 2rem;">
+                         <a href="index.html#contacto" class="btn-secondary">Solicitar Asesoría de Instalación</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>💧AguaZina</h3>
+                <p>Un proyecto para empoderar a la comunidad de Zinacantepec con soluciones hídricas sostenibles.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Recursos Rápidos</h3>
+                <ul>
+                    <li><a href="documentos/guia-instalacion.pdf" target="_blank">Guía de Instalación</a></li>
+                    <li><a href="documentos/presupuestos.pdf" target="_blank">Presupuestos</a></li>
+                    <li><a href="#contacto">Asesoría Gratuita</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siguenos en Redes</h3>
+                <a href="https://www.facebook.com/ayde.sabino" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/joul_diz?utm_source=ig_web_button_share_sheet&igsh=MXhnYTJmM3JuZGtmaw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.link/7kjhmi" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Proyecto Captación Agua Zinacantepec. Desarrollado por Laura Josefa Chigora Diaz, Ana Laura Sabino Tellez, Colaboradora Maritza Hernandez.</p>
+        </div>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+    <script>
+        // Toggle de Menú Hamburguesa
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>

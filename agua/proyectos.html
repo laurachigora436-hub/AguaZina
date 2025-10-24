@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Agua para Zinacantepec: Captación y Conservación</title>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+</head>
+<body>
+
+    <header class="main-header">
+        <a href="index.html" class="logo-link"> 
+            <div class="logo">
+                💧 Agua Zina
+            </div>
+        </a>
+        <nav class="main-nav" id="main-nav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="calculadora.html">Calculadora</a>
+            <a href="https://wa.link/7kjhmi" class="btn-cta">Contacto</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+<main class="container">
+        
+    <section class="galeria-proyectos text-center">
+        <h1>Galería de Proyectos Exitosos</h1>
+        <p class="subtitle">Nuestras instalaciones demuestran que la captación pluvial es la solución real y sostenible para la crisis de agua en Zinacantepec.</p>
+        
+        <div class="proyectos-grid">
+            <div class="proyecto-card">
+                <img src="imagenes/proyecto-1.jpg" alt="Instalación del sistema de captación en una casa de Zinacantepec">
+                <div class="proyecto-info">
+                    <h3>Colonia "El Mirador" - Sistema Familiar</h3>
+                    <p>Sistema modular instalado para una familia de 5. Se logró una capacidad de almacenamiento de **7,000 litros**. Reducción del 85% en la compra de pipas.</p>
+                    <span class="tag tag-agua">Ahorro 85%</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/proyecto-2.jpg" alt="Cisterna de almacenamiento de agua de lluvia en una escuela">
+                <div class="proyecto-info">
+                    <h3>Escuela Primaria "Benito Juárez"</h3>
+                    <p>Gran instalación de **10,000 litros** para el abastecimiento de sanitarios y limpieza. Impacto directo en **más de 300 estudiantes** y personal docente.</p>
+                    <span class="tag tag-comunidad">Uso Comunitario</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/3.jpg" alt="Azotea verde y sistema de captación en Zinacantepec">
+                <div class="proyecto-info">
+                    <h3>San Cristóbal Tecolit - Azotea Ecológica</h3>
+                    <p>Proyecto que combina la captación con azotea verde en un techo de 50 m². Mejora térmica y **2,500 litros** de cosecha anual para el riego de la azotea.</p>
+                    <span class="tag tag-ecologia">Ecológico + Térmico</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/4.jpg" alt="Sistema de captación en un pequeño negocio o taller">
+                <div class="proyecto-info">
+                    <h3>Barrio del Calvario - Taller de Herrería</h3>
+                    <p>Sistema de **5,000 litros** para abastecer procesos de limpieza industrial. Eliminó la dependencia municipal para usos no potables, ahorrando un **60%** en costos.</p>
+                    <span class="tag tag-negocio">Ahorro Industrial</span>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="imagenes/5.png" alt="Sistema de captación en una vivienda rural o de difícil acceso">
+                <div class="proyecto-info">
+                    <h3>Acahualco - Zona de Difícil Acceso</h3>
+                    <p>Instalación con filtrado de baja presión en una zona sin red de suministro municipal. Es la única fuente de agua segura para una familia de 6 durante el estiaje.</p>
+                    <span class="tag tag-acceso">Acceso Garantizado</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/6.jpg" alt="Gran cisterna de almacenamiento para una unidad habitacional">
+                <div class="proyecto-info">
+                    <h3>Santa Cruz Cuauhtenco - Unidad Habitacional</h3>
+                    <p>Implementación de una cisterna comunitaria de **20,000 litros** para una unidad de 8 viviendas. Solución colectiva que garantiza agua para sanitarios y áreas comunes.</p>
+                    <span class="tag tag-comunidad">Almacenamiento Comunal</span>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <img src="imagenes/7.jpg" alt="Sistema de purificación avanzado para consumo humano">
+                <div class="proyecto-info">
+                    <h3>Colonia Centro - Consumo Potable</h3>
+                    <p>Sistema avanzado de filtrado con UV y carbón activado para garantizar agua apta para **consumo humano**. Independencia total de garrafones y pipas.</p>
+                    <span class="tag tag-avanzado">Potable Certificado</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/8.jpg" alt="Sistema de captación pluvial para riego de cultivos">
+                <div class="proyecto-info">
+                    <h3>San Antonio Acahualco - Riego Agrícola</h3>
+                    <p>Diseño de una laguna de infiltración y almacenamiento para **15,000 litros** con fines de riego en temporada de estiaje. Apoyo a pequeños agricultores.</p>
+                    <span class="tag tag-agricultura">Riego Sostenible</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/9.jpeg" alt="Sistema de captación con fines educativos y un mural de agua">
+                <div class="proyecto-info">
+                    <h3>San Miguel Zinacantepec - Aula Verde</h3>
+                    <p>Instalación de un sistema visible de 5,000 litros con fines educativos. Se utiliza como laboratorio para enseñar el ciclo del agua a los estudiantes.</p>
+                    <span class="tag tag-educacion">Educación Ambiental</span>
+                </div>
+            </div>
+            
+            <div class="proyecto-card">
+                <img src="imagenes/10.jpg" alt="Cisterna y punto de agua en un mercado o zona pública">
+                <div class="proyecto-info">
+                    <h3>Mercado Municipal - Punto de Acopio</h3>
+                    <p>Sistema de captación de **12,000 litros** instalado en el techo del mercado para el uso de sanitarios y limpieza de áreas comunes, reduciendo la presión en el centro.</p>
+                    <span class="tag tag-publico">Servicio Público</span>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="documentos/presupuestos.pdf" target="_blank" class="btn-secondary"><i class="fa-solid fa-file-excel"></i> Descargar Presupuestos Modelo</a>
+        </div>
+    </section>
+
+    <section class="mapa-interactivo text-center" id="mapa-original">
+        <h2>Mapa Interactivo de Zonas de Escasez y Proyectos</h2>
+        <p class="subtitle">Los marcadores indican las zonas de escasez (rojo) y los proyectos exitosos (verde).</p>
+        <div class="mapa-container" style="padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-top: 20px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15049.82490530704!2d-99.71881519702202!3d19.29053535912444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d263920c85c275%3A0xf659616212e86b0a!2sZinacantepec%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1716801600000!5m2!1ses-419!2smx"
+            width="100%" 
+            height="100%" 
+            style="border:0; position: absolute; top: 0; left: 0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps de Zinacantepec"
+        ></iframe>
+    </div>
+        <p class="mapa-nota">Haz clic en los puntos marcados para ver el detalle de cada ubicación.</p>
+    </section>
+</main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>💧AguaZina</h3>
+                <p>Un proyecto para empoderar a la comunidad de Zinacantepec con soluciones hídricas sostenibles.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Recursos Rápidos</h3>
+                <ul>
+                    <li><a href="documentos/guia-instalacion.pdf" target="_blank">Guía de Instalación</a></li>
+                    <li><a href="documentos/presupuestos.pdf" target="_blank">Presupuestos</a></li>
+                    <li><a href="#contacto">Asesoría Gratuita</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Siguenos en Redes</h3>
+                <a href="https://www.facebook.com/ayde.sabino" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/joul_diz?utm_source=ig_web_button_share_sheet&igsh=MXhnYTJmM3JuZGtmaw==" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.link/7kjhmi" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>© 2025 Proyecto Captación Agua Zinacantepec. Desarrollado por Laura Josefa Chigora Diaz, Ana Laura Sabino Tellez, Colaboradora Maritza Hernandez.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/mapa.js"></script>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
+</body>
+</html>
